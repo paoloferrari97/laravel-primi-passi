@@ -25,6 +25,19 @@
         @endforeach
     </ol>
 
+    <h3>Lista Docenti:</h3>
+
+    <ol>
+        @foreach ($docenti as $docente)
+        <li>
+            <ul>
+                <li>{{$docente["nome"]}}</li>
+                <li>{{$docente["cognome"]}}</li>
+            </ul>
+        </li>
+        @endforeach
+    </ol>
+
 </body>
 
 </html>

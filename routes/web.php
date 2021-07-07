@@ -33,5 +33,28 @@ Route::get('/', function () {
         ]
     ];
 
-    return view('home', compact('studenti'));
+    $docenti = [
+        [
+            'nome' => 'Maria',
+            'cognome' => 'Maria'
+        ],
+        [
+            'nome' => 'Luisa',
+            'cognome' => 'Luisa'
+        ],
+        [
+            'nome' => 'Pina',
+            'cognome' => 'Pina'
+        ],
+        [
+            'nome' => 'Gina',
+            'cognome' => 'Gina'
+        ],
+        [
+            'nome' => 'Lina',
+            'cognome' => 'Lina'
+        ]
+    ];
+
+    return view('home', compact('studenti', 'docenti'));
 });
