@@ -1,18 +1,3 @@
-<?php
-
-/* $studenti = [
-    [
-        'nome' => 'Paolo',
-        'cognome' => 'Ferrari'
-    ],
-    [
-        'nome' => 'Mario',
-        'cognome' => 'Mariotti'
-    ]
-]; */
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 

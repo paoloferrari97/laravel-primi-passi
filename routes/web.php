@@ -15,9 +15,23 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $studenti = [
-        'nome' => 'Paolo',
-        'cognome' => 'Ferrari'
+        [
+            'nome' => 'Paolo',
+            'cognome' => 'Ferrari'
+        ],
+        [
+            'nome' => 'Luigi',
+            'cognome' => 'Luigiotti'
+        ],
+        [
+            'nome' => 'Giovanni',
+            'cognome' => 'Giovannotti'
+        ],
+        [
+            'nome' => 'Mario',
+            'cognome' => 'Mariotti'
+        ]
     ];
 
-    return view('home', $studenti);
+    return view('home', compact('studenti'));
 });
