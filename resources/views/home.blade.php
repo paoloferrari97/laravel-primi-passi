@@ -1,3 +1,18 @@
+<?php
+
+/* $studenti = [
+    [
+        'nome' => 'Paolo',
+        'cognome' => 'Ferrari'
+    ],
+    [
+        'nome' => 'Mario',
+        'cognome' => 'Mariotti'
+    ]
+]; */
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +26,19 @@
 <body>
 
     <h1>Hello World</h1>
+
+    <h3>Lista Studenti:</h3>
+
+    <ol>
+        @foreach ($studenti as $studente)
+        <li>
+            <ul>
+                <li>{{$studente["nome"]}}</li>
+                <li>{{$studente["cognome"]}}</li>
+            </ul>
+        </li>
+        @endforeach
+    </ol>
 
 </body>
 
